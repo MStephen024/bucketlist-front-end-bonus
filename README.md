@@ -4,6 +4,8 @@ Bucketlist is an application used to easily create and manage all of your bucket
 
 With Bucketlist users can seemless generate custom lists of objectives to help themselves stay on track and complete each goal. Immediately on sign in, you have the option to create a new list, view or edit an existing list, and even mark a list as complete!
 
+NEW: Memories function has been added, intended for users to document moments during completing a bucketlist item.
+
 ## How It Works
 
 Start by creating an account to receive full access to all of Bucketlist's features. From here users have the option to:
@@ -21,14 +23,19 @@ Start by creating an account to receive full access to all of Bucketlist's featu
 * Users will soon be able to attach a timeframe to a list or goal
 * Users will soon be able to view other public lists and like or follow a list
 
+### NEW 'MEMORIES' FEATURE
+
+Create and account or sign in normally to use this new feature. On the top right section of the webpage will there will now be a 'View My Memories' button that will take the user to their list of memories. This new page will also allow the user to create a new memory which will automatically be added to the same webpage. From here, users can delete or update an existing memory.
+
 ### Repos and Deployment
 
 Link to the client repo and deployed website
 
-* [Bucketlist-Client Repo](https://github.com/MStephen024/bucketlist-front-end-bonus)
-* [Bucketlist-Server Repo](https://github.com/MStephen024/bucketlist-back-end-bonus)
-* [Bucketlist Deployed Website](https://mstephen024.github.io/bucketlist-front-end-bonus/)
-* [Bucketlist Deployed Heroku](https://mysterious-ocean-13849.herokuapp.com/)
+* [Bucketlist-Client Repo, with Memories Added!](https://github.com/MStephen024/bucketlist-front-end-bonus)
+* [Bucketlist-Server Repo, with Memories Added!](https://github.com/MStephen024/bucketlist-back-end-bonus)
+* [Bucketlist Deployed Website, with Memories Added!](https://mstephen024.github.io/bucketlist-front-end-bonus/)
+* [Bucketlist Deployed Heroku, with Memories Added!](https://mysterious-ocean-13849.herokuapp.com/)
+
 ### MVP User Stories
 
   - As an unregistered user, I would like to sign up with email and password.
@@ -40,6 +47,16 @@ Link to the client repo and deployed website
   - As a signed in user, I would like to delete my bucket list item.
   - As a signed in user, I would like to see all my bucket list items but not other users'.
   - As a signed in user, I would like to cross off items to complete them.
+
+
+#### Memories User Stories
+  - As a user, I must be able to add a new Memory to a User
+
+  - As a user, I must be able to see each Memory
+
+  - As a user, I must be able to delete a Memory
+
+  - As a user, I must be able to update a Memory
 
 ### The Process
 
@@ -57,21 +74,30 @@ At last we made it to the final length of the project--crossing off completed it
 
 Now that we have achieved MVP we used the remainder of the time to style the website--which seemed like an entire project within itself. Luckily, this team is equipped with two CSS wizards who were able to maneuver through most of the styling issues and concepts, while producing a stylish, modern, and aesthetically pleasing Bucketlist website.
 
+##### NEW! MEMORIES!!!
+
+I first began with the back-end. I created the model and routes for each Memory CRUD. Then I tested the back-end with the curl scripts for each CRUD action. Once the back-end was complete I began to work on the front-end. In the front-end I started with the 'api.js' file to make sure the data from the back-end was properly captured in the front-end. Once I could receive the data from the back-end, I created the buttons and handlebars to test the upcoming events and ui code. Finally, once I was able to fully test the new Memories feature without issues, I finished up the project by creating the ui.js and event.js files to send the 'view' to the user.
+
 ### The Routes
 
 | Verb   | URI Pattern  | Result |
 |:-------|:-------------|:------------------|
-| GET    | `/list-items`     | read all list items    |
+| GET    | `/list-items`     | index all list items    |
 | POST   | `/list-items`     | create list item       |
 | PATCH  | `/list-items/:id` | update list item       |
 | DELETE | `/list-items/:id` | destroy list item      |
 
+| Verb   | URI Pattern  | Result |
+|:-------|:-------------|:------------------|
+| GET    | `/memories`     | index all memories    |
+| POST   | `/memories`     | create memory       |
+| PATCH  | `/memories/:id` | update memory       |
+| DELETE | `/memories/:id` | destroy memory      |
+
 
 ## Wireframe Images
 
-![Wireframe Image](https://imgur.com/5ao1cQ2.jpg)
-![Wireframe Image 2](https://i.imgur.com/qALKZgt.jpg)
-![Wireframe Image 3](https://i.imgur.com/tYZ2h0T.jpg)
+![Wireframe Image](https://i.imgur.com/klJBB0a.jpg)
 
 ## Built With
 * HTML
