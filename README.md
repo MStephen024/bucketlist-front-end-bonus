@@ -25,10 +25,10 @@ Start by creating an account to receive full access to all of Bucketlist's featu
 
 Link to the client repo and deployed website
 
-* [Bucketlist-Client Repo](https://github.com/sei03-index0/bucketlist-front-end)
-* [Bucketlist-Server Repo](https://github.com/sei03-index0/bucketlist-back-end)
-* [Bucketlist Deployed Website](https://sei03-index0.github.io/bucketlist-front-end/)
-* [Bucketlist Deployed Heroku](https://obscure-bayou-78598.herokuapp.com/)
+* [Bucketlist-Client Repo](https://github.com/MStephen024/bucketlist-front-end-bonus)
+* [Bucketlist-Server Repo](https://github.com/MStephen024/bucketlist-back-end-bonus)
+* [Bucketlist Deployed Website](https://mstephen024.github.io/bucketlist-front-end-bonus/)
+* [Bucketlist Deployed Heroku](https://mysterious-ocean-13849.herokuapp.com/)
 ### MVP User Stories
 
   - As an unregistered user, I would like to sign up with email and password.
